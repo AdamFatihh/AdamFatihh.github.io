@@ -1,0 +1,14 @@
+body {
+    color: #2E7D32;
+    background-color: #D2B48C;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    margin: 0; /*selain luo automaattisesti pienen marginaalin*/
+}
+
+
+
+#valittu {
+    color: rgba(87, 54, 4);
+    background-color:rgba(255, 235, 205, 0.6);
+}
