@@ -1,6 +1,6 @@
 body {
-    color: #004c04;
-    background-color:#004c04;
+    color: #D2B48C;
+    background-color:#D2B48C;
     font-family: Tahoma, Verdana, Geneva, sans-serif;
     font-size: 16px;
     margin: 0; /*selain luo automaattisesti pienen marginaalin*/
@@ -9,6 +9,13 @@ header{
     text-align: center;
     padding-top: 30px;
 }
+.alisivu-sisalto {
+    background-color: rgb(255, 248, 239);
+    display:flex;
+    justify-content: space-around;
+    padding: 0px;
+}
+
 /* fontit */
 
 /*päävalikko*/
@@ -19,6 +26,7 @@ nav a {
     text-decoration: none;
     display: inline-block;
     border: 2px solid rgb(87, 54, 4);
+    text-align: center;
 }
 nav a:hover {
     color: rgb(87, 54, 4);
@@ -42,7 +50,17 @@ nav a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
-
+/*alatunniste, joka sivulla sama*/
+footer{
+    font-family: otsikko, "sans serif";
+    font-size: 18px;
+    color: rgba(87, 54, 4);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
 
 
