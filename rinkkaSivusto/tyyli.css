@@ -1,6 +1,6 @@
 body {
-    color: #2E7D32;
-    background-color: #D2B48C;
+    color: #004c04;
+    background-color:#004c04;
     font-family: Tahoma, Verdana, Geneva, sans-serif;
     font-size: 16px;
     margin: 0; /*selain luo automaattisesti pienen marginaalin*/
@@ -13,28 +13,28 @@ header{
 
 /*päävalikko*/
 nav a {
-    background: rgba(87, 54, 4);
+    background: rgb(122, 74, 3);
     font-family: otsikko, "sans serif";
     color:whitesmoke;
     text-decoration: none;
     display: inline-block;
-    border: 2px solid rgba(87, 54, 4);
+    border: 2px solid rgb(87, 54, 4);
 }
 nav a:hover {
-    color: rgba(87, 54, 4);
+    color: rgb(87, 54, 4);
     background-color: whitesmoke;
 }
 #valittu {
-    color: rgba(87, 54, 4);
+    color: rgb(87, 54, 4);
     background-color:rgba(255, 235, 205, 0.6);
 }
 
 .toimintakehote {
-    border: 2px solid rgba(87, 54, 4);
+    border: 2px solid rgb(87, 54, 4);
     border-radius: 10px;
     background-color: whitesmoke;
     font-family: otsikko, "sans serif";
-    color: rgba(87, 54, 4);
+    color: rgb(87, 54, 4);
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
