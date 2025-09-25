@@ -8,6 +8,7 @@ body {
 header{
     text-align: center;
     padding-top: 30px;
+}
 /* fontit */
 
 /*päävalikko*/
@@ -203,5 +204,4 @@ nav a:hover {
         bottom: 0;
         width: 100%;
         max-height: 15%;
-    }
-}
+    }}
