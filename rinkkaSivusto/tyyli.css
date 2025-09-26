@@ -1,5 +1,5 @@
 body {
-    color: #D2B48C;
+    color: #ffffff;
     background-color:#D2B48C;
     font-family: Tahoma, Verdana, Geneva, sans-serif;
     font-size: 16px;
@@ -23,6 +23,11 @@ header{
 
 header nav {
     text-align: center;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 nav a {
@@ -58,16 +63,30 @@ header nav a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
-/*alatunniste, joka sivulla sama*/
-footer{
+/*alatunniste, joka sivulla sama, liimataan sivun phjaan kiinni*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* pushes footer to the bottom */
+}
+
+footer {
     font-family: otsikko, "sans serif";
     font-size: 18px;
     color: rgba(87, 54, 4);
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 
 
@@ -226,7 +245,6 @@ footer{
     footer{
         flex-direction: row;
         text-align: left;
-        position: fixed;
         bottom: 0;
         width: 100%;
         max-height: 15%;
