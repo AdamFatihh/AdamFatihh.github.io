@@ -10,7 +10,7 @@ header{
     padding-top: 30px;
 }
 .logo img {
-    height: 50px;   /* vaihda logon kokoa*/
+    height: 80px;   /* vaihda logon kokoa*/
     display: block;
     margin-left: 10px;   /* työntää logoa*/
     margin-top: -20px; 
@@ -27,7 +27,7 @@ nav a {
     padding: 0px;
 }
 
-/* fontit */
+/* fontit yms */
 h1, h2, h3, .esittely {
     font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
@@ -39,7 +39,12 @@ h1 {
     text-align: center;
     padding-top: 30px;
 }
-
+h2 {
+    text-align: left;      /* Teksti vasempaan reunaan */
+    width: 60%;            /* Vie 60 % tilasta */
+    margin-left: 4%;     /* Keskittää leveydeltään 60 %:n alueen */
+    margin-right: auto;    /* Keskittää leveydeltään 60 %:n alueen */
+}
 .esittely {
     padding-left: 20px; 
 header, header nav, header h1, header h2, header h3 {
@@ -112,12 +117,12 @@ main {
 
 footer {
     font-family: otsikko, "sans serif";
-    font-size: 18px;
+    font-size: 22px;
     color: rgba(87, 54, 4);
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
-    padding: 15px 0;
+    padding: 40px 0;
 }
 
 
