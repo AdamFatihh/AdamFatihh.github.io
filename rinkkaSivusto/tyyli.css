@@ -18,7 +18,27 @@ header{
 }
 
 /* fontit */
+h1, h2, h3, .esittely {
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+}
 
+h1 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.esittely {
+    padding-left: 20px; 
+header, header nav, header h1, header h2, header h3 {
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-weight: normal;  /* or bold if you want emphasis */
+    line-height: 1.2;     /* improves readability */
+    letter-spacing: 0.5px; /* optional, for slight spacing */
+}
+}
 /*päävalikko*/
 
 header nav {
@@ -28,11 +48,12 @@ header nav {
   left: 0;
   width: 100%;
   z-index: 1000;
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
 
 nav a {
     background: rgb(122, 74, 3);
-    font-family: otsikko, "sans serif";
+    font-family: otsikko, sans-serif;
     color:whitesmoke;
     text-decoration: none;
     display: inline-block;
