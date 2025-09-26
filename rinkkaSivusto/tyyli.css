@@ -9,7 +9,17 @@ header{
     text-align: center;
     padding-top: 30px;
 }
+.logo img {
+    height: 50px;   /* vaihda logon kokoa*/
+    display: block;
+    margin-left: 10px;   /* työntää logoa*/
+    margin-top: -20px; 
+}
 
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+}
 .alisivu-sisalto {
     background-color: rgb(255, 248, 239);
     display:flex;
@@ -25,7 +35,7 @@ h1, h2, h3, .esittely {
 h1 {
     font-size: 35px;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px rgb(0, 97, 34);
     text-align: center;
     padding-top: 30px;
 }
