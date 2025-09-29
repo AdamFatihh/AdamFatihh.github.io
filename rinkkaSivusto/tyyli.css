@@ -163,8 +163,6 @@ footer {
         background-size: cover;
         height: 400px;
     }
-
-
     nav a { 
         font-size: 15px;
         width: 100px;
@@ -202,15 +200,16 @@ footer {
         line-height: 1.4;
     }
     .boksi {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        display: flex;
+        flex-direction: row; /*teksti vasemmalla kuva oikealla*/
+        align-items: flex-start; /*laittaa kuvan alkmaan samalta riviltä kuin tekstin*/
+        gap: 30px;
     }
     .side-image {
-        max-width: 100%;
+        max-width: 45%;
         height: auto;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 0;
     }
     footer {
         flex-direction: column;
@@ -224,10 +223,6 @@ footer {
         background-size: cover;
         height: 600px;
     }
-    #alisivut {
-        background-image: url(kuvat/tausta-mobiili.jpg);
-    }
-
     nav a { 
         font-size: 16px;
         width: 110px;
@@ -267,16 +262,17 @@ footer {
     }
 
     .boksi {
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         align-items: flex-start;
-        gap: 25px;
+        gap: 30px;
     }
 
     .side-image {
-        max-width: 100%;
+        max-width: 50%;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto; /* työtää kuvan oikealle*/
+        margin-right: 0;
     }
 
     footer {
