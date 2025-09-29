@@ -110,7 +110,16 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+.boksi {
+  display: flex;          /* aligns children in a row */
+  align-items: flex-start; /* top-align text and image */
+  gap: 20px;              /* space between text and image */
+}
 
+.side-image {
+  max-width: 200px;       /* control image size */
+  height: auto;
+}
 main {
     flex: 1; /* pushes footer to the bottom */
 }
