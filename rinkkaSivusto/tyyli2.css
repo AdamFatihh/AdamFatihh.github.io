@@ -64,9 +64,9 @@ p {
     padding-left: 20px; 
 header, header nav, header h1, header h2, header h3 {
     font-family: Tahoma, Verdana, Geneva, sans-serif;
-    font-weight: normal;
-    line-height: 1.2;     /* auttaa luettavuutta */
-    letter-spacing: 0.5px; /* ei pakollinen, mutta auttaa luettavuutta */
+    font-weight: normal;  /* or bold if you want emphasis */
+    line-height: 1.2;     /* improves readability */
+    letter-spacing: 0.5px; /* optional, for slight spacing */
 }
 
 }
@@ -133,6 +133,9 @@ body {
 }
 
 .side-image {
+    width: 100%; /*antaa kuvan pienentyä skaalattaessa*/
+  max-width: 600px;       /* control image size */
+  height: auto;
   margin-left: auto;
   margin-right: 60px;
 }
@@ -152,25 +155,34 @@ footer {
 
 
 
-/*Alla skaalaus*/
+
 
 
 
 /*mobiilikoko*/
 @media (max-width: 600px) {
-    #Etusivu {
+    .side-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #etusivu {
         background-image: url(kuvat/paakuva-kahvila-mobiili.jpg);
         background-size: cover;
         height: 400px;
     }
-
+    #alisivut {
+        background-image: url(kuvat/tausta-mobiili.jpg);
+    }
 
     nav a { 
         font-size: 15px;
         width: 100px;
         height: 20px;
         padding: 7px;
-        margin: 3px 5px;
+        margin:3px 5px;
     }
     #slogan {
         font-size: 30px;
@@ -189,37 +201,57 @@ footer {
     h1 {
         font-size: 25px;
     }
-    h2 {
+    h2{
         font-size: 20px;
     }
     h3 {
         font-size: 18px;
     }
-    p {
-        font-size: 16px;
-        margin-left: 6%;
-        margin-right: auto;
-        line-height: 1.4;
+    .esittely {
+        font-size: 18px;  
     }
-    .boksi {
+    #paasivu {
+        grid-template-areas:
+            'g1'
+            'g3'
+            'g2';
+    }
+    #kahvimme {
+        grid-template-areas:
+            'g1'
+            'g3'
+            'g2';
+    }
+    #musamme {
+        grid-template-areas:
+            'g1'
+            'g3'
+            'g2';
+    }
+    .grid-yritys {
+        grid-template-areas:
+            'g1-h1'
+            'g2-hk1'
+            'g3-h2'
+            'g4-hk2';
+    }
+    footer{
         flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        text-align: center;
     }
+}
+
+
+/*tablettikoko*/
+@media (min-width: 600px) and (max-width: 1199px) {
     .side-image {
+        width: 100%;
         max-width: 100%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
     }
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-/*tablettikoko*/
-@media (min-width: 600px) and (max-width: 1199px) {
-    #Etusivu {
+    #etusivu {
         background-image: url(kuvat/paakuva-kahvila.jpg);
         background-size: cover;
         height: 600px;
@@ -247,6 +279,16 @@ footer {
     .toimintakehote {
         font-size: 20px;
     }
+
+    .sisalto {
+        margin: 3% 10% 3% 10%;
+    }
+
+    .alisivu-sisalto {
+        margin: 3% 10% 3% 10%;
+        flex-direction: column;
+    }
+
     h1 {
         font-size: 30px;
     }
@@ -272,21 +314,21 @@ footer {
         gap: 25px;
     }
 
-    .side-image {
-        max-width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     footer {
         flex-direction: column;
         text-align: center;
     }
 }
 /*suuri näyttö*/
-@media screen and (min-width: 1200px) {
-    #Etusivu {
+@media (min-width: 1200px) {
+    .side-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin-left: auto;
+        margin-right: 60px;
+    }
+    #etusivu {
         background-image: url(kuvat/paakuva-kahvila.jpg);
         background-size: cover;
         height: 950px;
