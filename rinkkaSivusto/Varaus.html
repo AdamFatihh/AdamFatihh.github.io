@@ -24,7 +24,7 @@
 <main> <!-- rajataan elementillä sivun pääsisältö, auttaa ruudunlukuohjelmia 
     ja koodinlukijoita erottamaan sivun päätarkoitukset ja -teksit-->
   <div class="boksi">
-    <div class="teksti"> <!-- tässä erotetaan teksti, jotta kuva ei valu alas tekstin lisääntyessä-->
+    <div class="teksti"> <!-- tehdään tekstille flexbox-->
         <h2>
       Varaa rinkka helposti ja nopeasti näin:
     </h2>
@@ -36,9 +36,9 @@
     </p>
     
  </div>
-    <!-- liitetään kuva sivulle errillisessä boksissa-->
+    <!-- liitetään kuva sivulle erillisessä flexboksissa-->
     <img src="varauskuva.jpeg" alt="Kuvassa Haglöfs SEC 65L rinkka mallin selässä" class="side-image">
-  </div>
+  </div> <!-- kaikki teksti alla venyy sivun levyiseksi flexboxin ulkopuolella-->
   <h3>
         Nouto:
     </h3>
@@ -63,7 +63,7 @@
 </p>
 </main>
 <!--Sivun pääelementti loppuu tähän-->
-<!--Sivun alatunniste syntyy alla, liimattu sivun alaosaan .css tiedostossa-->
+<!--Sivun alatunniste syntyy alla, liimattu sivun alaosaan .css tiedostossa, linkeillä täytetään footer-->
 <footer> 
     <div>
         <a href="yhteystiedot.html">Ota meihin yhteyttä

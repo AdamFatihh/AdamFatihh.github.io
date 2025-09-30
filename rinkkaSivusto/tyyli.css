@@ -42,35 +42,26 @@ h2 {
     text-align: left;      /* Teksti vasempaan reunaan */
     width: 60%;            /* Vie 60 % tilasta */
     margin-left: 4%;     /* Keskittää leveydeltään 60 %:n alueen */
-    margin-right: auto;    /* Keskittää leveydeltään 60 %:n alueen */
+    margin-right: auto;   
     color: rgba(178, 100, 10, 0.913);
 }
 h3 {
     text-align: left;      /* Teksti vasempaan reunaan */
     width: 60%;            /* Vie 60 % tilasta */
     margin-left: 4%;     /* Keskittää leveydeltään 60 %:n alueen */
-    margin-right: auto;    /* Keskittää leveydeltään 60 %:n alueen */
+    margin-right: auto;    
     color: rgba(178, 100, 10, 0.913);
 }
 p {
-    text-align: left;
+    text-align: left;  /* Teksti vasempaan reunaan */
     color: #ffffff;
     font-size: 20px;
     line-height: 1.5;
-    margin-left: 6%;     /* Keskittää leveydeltään 60 %:n alueen */
-    margin-right: auto; /* Keskittää leveydeltään 60 %:n alueen */
+    margin-left: 6%;    /* sirtää leipätekstin hiukan oikealle verrattuna otsikoihin, parantaa luettavuutta ja asettelua*/
+    margin-right: auto; 
     color: rgb(8, 89, 51);
 }
-.esittely {
-    padding-left: 20px; 
-header, header nav, header h1, header h2, header h3 {
-    font-family: Tahoma, Verdana, Geneva, sans-serif;
-    font-weight: normal;
-    line-height: 1.2;     /* auttaa luettavuutta */
-    letter-spacing: 0.5px; /* ei pakollinen, mutta auttaa luettavuutta */
-}
 
-}
 /*päävalikko*/
 
 header nav {
@@ -116,7 +107,22 @@ header nav a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
-/*alatunniste, joka sivulla sama, liimataan sivun phjaan kiinni*/
+
+/*tehdään flexboxi*/
+.boksi {
+  display: flex;   
+  align-items: flex-start; /* järjestää tekstin ja kuvan alkamaan samalta korkeudelta */
+  gap: 30px;              /* tekstin ja kuvan etäisyys sivuttaissuunnassa */
+}
+/*muokataan kuva halutuksi*/
+.side-image {
+  margin-left: auto;
+  margin-right: 60px;
+  border: 4px solid rgb(87, 52, 6);
+  border-radius: 8px;
+  padding: 2px;
+}
+/*alatunniste, joka sivulla sama, liimataan sivun pohjaan kiinni*/
 html, body {
     height: 100%;
     margin: 0;
@@ -127,23 +133,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-.boksi {
-  display: flex;   
-  align-items: flex-start; /* järjestää tekstin ja kuvan alkamaan samalta korkeudelta */
-  gap: 30px;              /* tekstin ja kuvan etäisyys sivuttaissuunnassa */
-}
-
-.side-image {
-  margin-left: auto;
-  margin-right: 60px;
-  border: 4px solid rgb(87, 52, 6);
-  border-radius: 8px;
-  padding: 2px;
-}
 main {
     flex: 1; /* pushes footer to the bottom */
 }
-
+/*muokataan alatnniste halutuksi*/
 footer {
     font-family: otsikko, "sans serif";
     font-size: 22px;
@@ -163,7 +156,7 @@ footer a:hover {
 }
 
 
-/*Alla skaalaus*/
+/*ALTA ALKAA SKAALAUS!*/
 
 
 
@@ -235,7 +228,7 @@ header nav {
         align-items: flex-start; /*laittaa kuvan alkmaan samalta riviltä kuin tekstin*/
         gap: 30px;
     }
-    .side-image {
+    .side-image {   /*muokataan kuva halutuksi mobiilissa*/
         max-width: 45%;
         height: auto;
         margin-left: auto;
@@ -300,7 +293,7 @@ header nav {
         gap: 30px;
     }
 
-    .side-image {
+    .side-image { /*muokataan kuva haluksi tablettikoossa*/
         max-width: 50%;
         height: auto;
         margin-left: auto; /* työtää kuvan oikealle*/
@@ -370,7 +363,7 @@ header nav {
         align-items: flex-start;
         gap: 30px;
     }
-    .side-image {
+    .side-image { /*muokataan kuva halutuksi desktopilla*/
         max-width: 600px;  /* määrittää kuvan koon suurelle ruudulle */
         height: auto;
         margin-left: auto;
