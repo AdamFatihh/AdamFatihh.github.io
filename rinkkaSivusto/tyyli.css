@@ -107,8 +107,27 @@ header nav a:hover {
     margin: 4px 2px;
     cursor: pointer;
 }
+/*tehdään flexboxi etusivulle*/
 
-/*tehdään flexboxi*/
+.etusivulaatikko {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.etusivulaatikko .text {
+  flex: 1; /* text expands */
+}
+
+.etusivulaatikko .etusivunsivukuva img {
+  max-width: 300px; /* control image size */
+  height: auto;
+}
+
+
+/*tehdään flexboxi varaussivulle*/
 .boksi {
   display: flex;   
   align-items: flex-start; /* järjestää tekstin ja kuvan alkamaan samalta korkeudelta */
@@ -180,6 +199,7 @@ footer a:hover {
   margin-left: 10px;
   margin-top: 0; 
 }
+
 header {
   display: flex;
   flex-direction: column;
@@ -222,6 +242,16 @@ header nav {
         margin-right: 4%;
         line-height: 1.4;
     }
+    /*etusivun flexboksille*/
+     .etusivulaatikko {
+    flex-direction: column; /*kasaa päällekkäin*/
+    text-align: center;
+  }
+
+  .etusivulaatikko .etusivunsivukuva img {
+    max-width: 100%;
+  }
+  /*varaussivun flexboksille*/
     .boksi {
         display: flex;
         flex-direction: row; /*teksti vasemmalla kuva oikealla*/
@@ -235,16 +265,18 @@ header nav {
         margin-right: 20px;
         margin-top: 100px;
         
+        
     }
     footer {
         flex-direction: column;
         text-align: center;
     }
 }
+
 /*tablettikoko*/
 @media (min-width: 600px) and (max-width: 1199px) {
     #Etusivu {
-        background-image: url(kuvat/paakuva-kahvila.jpg);
+        background-image: url(taustateti.jpeg);
         background-size: cover;
         height: 600px;
     }
@@ -308,7 +340,7 @@ header nav {
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
     #Etusivu {
-        background-image: url(kuvat/paakuva-kahvila.jpg);
+        background-image: url(taustateti.jpeg);
         background-size: cover;
         height: 950px;
     }
