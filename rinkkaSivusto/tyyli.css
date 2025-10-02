@@ -120,12 +120,13 @@ header nav a:hover {
 .etusivulaatikko .text {
   flex: 1; /* text expands */
 }
-
-.etusivulaatikko .etusivunsivukuva img {
-  max-width: 300px; /* control image size */
-  height: auto;
+.sivukuva {
+  border: 4px solid rgb(87, 52, 6);
+  border-radius: 8px;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: 60px;
 }
-
 
 /*tehdään flexboxi varaussivulle*/
 .boksi {
@@ -324,7 +325,12 @@ header nav {
         align-items: flex-start;
         gap: 30px;
     }
-
+    .sivukuva{/*muokataan kuva haluksi tablettikoossa*/
+    max-width: 50%;
+        height: auto;
+        margin-left: auto; /* työtää kuvan oikealle*/
+        margin-right: 0;
+    }
     .side-image { /*muokataan kuva haluksi tablettikoossa*/
         max-width: 50%;
         height: auto;
@@ -340,9 +346,10 @@ header nav {
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
     #Etusivu {
-        background-image: url(taustateti.jpeg);
+        background-image: url(taustakuva.jpg);
         background-size: cover;
-        height: 950px;
+        background-position: center;
+        height: 950;
     }
     #alisivut {
         background-image: url(kuvat/tausta.jpg);
@@ -396,6 +403,12 @@ header nav {
         gap: 30px;
     }
     .side-image { /*muokataan kuva halutuksi desktopilla*/
+        max-width: 600px;  /* määrittää kuvan koon suurelle ruudulle */
+        height: auto;
+        margin-left: auto;
+        margin-right: 60px;
+    }
+    .sivukuva {
         max-width: 600px;  /* määrittää kuvan koon suurelle ruudulle */
         height: auto;
         margin-left: auto;
