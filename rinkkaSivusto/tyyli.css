@@ -19,6 +19,7 @@ nav a {
     padding: 5px 10px;
     text-decoration: none;
 }
+
 .alisivu-sisalto {
     background-color: rgb(255, 248, 239);
     display:flex;
@@ -105,8 +106,10 @@ header nav a:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-left: 30%;
     cursor: pointer;
+    display: inline-block;   /* shrink to fit text */
+    margin: 10px auto 0 auto; /* centers horizontally */
+
 }
 /*tehdään flexboxi etusivulle*/
 
@@ -145,7 +148,8 @@ header nav a:hover {
 }
 /*alatunniste, joka sivulla sama, liimataan sivun pohjaan kiinni*/
 html, body {
-    height: 100%;
+    height: fit-content;
+    max-height: 1780px;
     margin: 0;
 }
 
@@ -249,10 +253,6 @@ header nav {
     flex-direction: column; /*kasaa päällekkäin*/
     text-align: center;
   }
-
-  .etusivulaatikko .etusivunsivukuva img {
-    max-width: 100%;
-  }
   /*varaussivun flexboksille*/
     .boksi {
         display: flex;
@@ -266,8 +266,12 @@ header nav {
         margin-left: auto;
         margin-right: 20px;
         margin-top: 100px;
-        
-        
+    }
+         .sivukuva{/*muokataan kuva haluksi tablettikoossa*/
+        max-width: 90%;
+        height: auto;
+        margin: 20px auto 0 auto;
+    }
     }
     footer {
         flex-direction: column;
@@ -278,8 +282,9 @@ header nav {
 /*tablettikoko*/
 @media (min-width: 600px) and (max-width: 1199px) {
     #Etusivu {
-        background-image: url(taustateti.jpeg);
+        background-image: url(taustakuva.jpg);
         background-size: cover;
+        background-position: center;
         height: 600px;
     }
     nav a { 
@@ -350,7 +355,7 @@ header nav {
         background-image: url(taustakuva.jpg);
         background-size: cover;
         background-position: center;
-        height: 950;
+        height: 950px;
     }
     #alisivut {
         background-image: url(kuvat/tausta.jpg);
@@ -423,3 +428,4 @@ header nav {
         max-height: 15%;
     }
 }
+
