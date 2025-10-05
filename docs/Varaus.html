@@ -11,19 +11,19 @@
      <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
-<header id="alisivu">
+<header id="alisivu">  <!-- luodaan päävalikko ja logo vasempaan kulmaan-->
     <a href="index.html" class="logo">
         <img src="rinkkalogo.png" alt="Rinkkakympillä logo">
     </a>
     <nav> 
     <a href="index.html" >Etusivu</a>
-    <a href="Varaus.html" id="valittu"> Varaa tästä </a>
+    <a href="Varaus.html" id="valittu"> Varaa tästä </a> <!-- tyylitellään päävalikkoon tämänhetkinen sivu viittaamalla tyylitiedostoon id tagilla-->
     <a href="Yhteystiedot.html"> Yhteystiedot </a>
     </nav>
 </header>
 <main> <!-- rajataan elementillä sivun pääsisältö, auttaa ruudunlukuohjelmia 
     ja koodinlukijoita erottamaan sivun päätarkoitukset ja -teksit-->
-  <div class="boksi">
+  <div class="boksi"> <!--flexboksit sivukohtaiselle sisällölle joka voidaan tyylittää .css tiedostossa-->
     <div class="teksti"> <!-- tehdään tekstille flexbox-->
         <h2>
       Varaa rinkka helposti ja nopeasti näin:
@@ -38,7 +38,7 @@
  </div>
     <!-- liitetään kuva sivulle erillisessä flexboksissa-->
     <img src="varauskuva.jpeg" alt="Kuvassa Haglöfs SEC 65L rinkka mallin selässä" class="side-image">
-  </div> <!-- kaikki teksti alla venyy sivun levyiseksi flexboxin ulkopuolella-->
+  </div> <!-- kaikki allaoleva teksti venyy sivun levyiseksi flexboxin ulkopuolella-->
   <h3>
         Nouto:
     </h3>
@@ -62,7 +62,7 @@
      <br>Jos rinkkaa ei voida korjata, maksaa vuokraaja uuden rinkan hinnan, noin 250€.
 </p>
 </main>
-<!--Sivun pääelementti loppuu tähän-->
+<!--Sivukohtainen sisältö loppuu tähän-->
 <!--Sivun alatunniste syntyy alla, liimattu sivun alaosaan .css tiedostossa, linkeillä täytetään footer-->
 <footer> 
     <div>
