@@ -293,16 +293,15 @@ footer a:hover {
         font-size: 20px;
     }
     .sivukuva{/*muokataan kuva haluksi tablettikoossa*/
-    max-width:90%;
-        height: auto;
+        height: 550px;
         margin-left: auto; /* työtää kuvan oikealle*/
-        margin-right: 0;
+        margin-right: 8px;
     }
     .side-image { /*muokataan kuva haluksi tablettikoossa*/
         max-width: 50%;
         height: auto;
         margin-left: auto; /* työtää kuvan oikealle*/
-        margin-right: 0;
+        margin-right: 8px;
     }
 
     footer {
