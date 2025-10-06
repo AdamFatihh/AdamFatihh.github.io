@@ -1,5 +1,5 @@
 body {
-    color: #ffffff;
+    color: rgb(8, 89, 51);
     background-color:#ffffff;
     font-family: Tahoma, Verdana, Geneva, sans-serif;
     font-size: 16px;
@@ -162,7 +162,7 @@ footer a:hover {
 /*mobiilikoko*/
 @media (max-width: 600px) {
      #Etusivu {
-        background-image: url(taustakuva.jpg);
+        background-image: url(taustakuva1.jpg);
         background-size: cover;
         background-position: center;
         height: 650px;
@@ -250,7 +250,7 @@ footer a:hover {
 /*tablettikoko*/
 @media (min-width: 600px) and (max-width: 1199px) {
     #Etusivu {
-        background-image: url(taustakuva.jpg);
+        background-image: url(taustakuva1.jpg);
         background-size: cover;
         background-position: center;
         height: 600px;      /* taustakuvan korkeus */
@@ -313,13 +313,10 @@ footer a:hover {
 /*suuri näyttö*/
 @media screen and (min-width: 1200px) {
     #Etusivu {
-        background-image: url(taustakuva.jpg);
+        background-image: url(taustakuva1.jpg);
         background-size: cover;
         background-position: center;
         height: 800px;
-    }
-    #alisivut {
-        background-image: url(kuvat/tausta.jpg);
     }
     nav a { 
         font-size: 20px;
@@ -383,4 +380,5 @@ footer a:hover {
         width: 100%;
     }
 }
+
 
